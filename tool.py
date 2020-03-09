@@ -131,7 +131,7 @@ def handle_photo():
             list_info[-1]['arr']['type'].append('image')
     list_info.reverse()  # 翻转
     final_dict = {"list": list_info}
-    with open("F:/hexophotos/photos","w") as fp:
+    with open("F:/myblog/source/photos/data.json","w") as fp:
         json.dump(final_dict, fp)
 
 def cut_photo():
